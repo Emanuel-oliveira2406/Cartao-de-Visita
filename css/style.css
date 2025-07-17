@@ -133,3 +133,55 @@ button:hover{
    opacity: 1;
    max-height: 100px;
 }
+
+/* =================================================================== */
+/* REGRAS PARA RESPONSIVIDADE                      */
+/* =================================================================== */
+/* As regras abaixo serão aplicadas apenas em telas com largura máxima 
+   de 480px, o que inclui a grande maioria dos celulares na vertical. */
+
+@media (max-width: 480px) {
+
+    /*
+     * Comentário: Ajustando o cartão principal.
+     * Motivo: A largura fixa de 400px é maior que a tela de muitos celulares.
+     * Solução: Trocamos a largura fixa por uma porcentagem (90%) para que 
+     * o cartão se ajuste à tela e sempre mantenha uma pequena margem nas laterais.
+    */
+    .card {
+        width: 90%;
+    }
+
+    /*
+     * Comentário: Ajustando o título "h2".
+     * Motivo: A altura fixa de 40px poderia cortar o texto se ele precisasse 
+     * de duas linhas em uma tela menor. O tamanho da fonte também podia
+     * parecer muito grande no novo layout.
+     * Solução: Removemos a altura fixa e diminuímos um pouco a fonte.
+    */
+    .card-info h2 {
+        font-size: 22px;
+        height: auto;
+    }
+
+    /*
+     * Comentário: Ajustando o parágrafo de descrição.
+     * Motivo: Melhorar a legibilidade em telas pequenas.
+     * Solução: Aumentamos levemente a fonte para facilitar a leitura.
+    */
+    .card-info p {
+        font-size: 15px;
+    }
+
+    /*
+     * Comentário: Ajustando os botões.
+     * Motivo: Os botões também tinham larguras fixas que poderiam parecer
+     * desproporcionais no cartão menor.
+     * Solução: Definimos a largura deles para 90% do espaço disponível
+     * dentro do cartão, mantendo o layout consistente e fluido.
+    */
+    button,
+    .dwn-curriculo .btn-contato {
+        width: 90%;
+    }
+}
