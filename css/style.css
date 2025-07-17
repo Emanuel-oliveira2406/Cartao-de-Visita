@@ -149,7 +149,7 @@ button:hover{
      * o cartão se ajuste à tela e sempre mantenha uma pequena margem nas laterais.
     */
     .card {
-        width: 80%;
+        width: 50%;
     }
 
     /*
