@@ -149,7 +149,7 @@ button:hover{
      * o cartão se ajuste à tela e sempre mantenha uma pequena margem nas laterais.
     */
     .card {
-        width: 90%;
+        width: 80%;
     }
 
     /*
@@ -182,6 +182,6 @@ button:hover{
     */
     button,
     .dwn-curriculo .btn-contato {
-        width: 90%;
+        width: 80%;
     }
 }
